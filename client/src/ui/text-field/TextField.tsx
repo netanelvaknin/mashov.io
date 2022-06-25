@@ -8,17 +8,27 @@ export interface TextFieldProps extends ComponentPropsWithoutRef<"input"> {
     className?: string;
     helperText?: string;
     multiLine?: boolean;
+    placeholder?: string;
     onChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
 }
 
-const TextField = ({label, value, onChange, className, helperText, error = false, multiLine = false}: TextFieldProps) => {
+export const TextField = ({
+  label,
+  value,
+  onChange,
+  className,
+  helperText,
+  error = false,
+  placeholder,
+  multiLine = false
+}: TextFieldProps) => {
     return (
         <TextFieldContainer className={className}>
             <Label error={error} htmlFor="mashov-textfield">{label}</Label>
             {multiLine ? (
-                <TextArea value={value} id="mashov-textfield" error={error} autoComplete="off" onChange={onChange} />
+                <TextArea value={value} placeholder={placeholder} id="mashov-textfield" error={error} autoComplete="off" onChange={onChange} />
             ) : (
-                <StyledInput value={value} id="mashov-textfield" error={error} autoComplete="off" onChange={onChange} />
+                <StyledInput value={value} placeholder={placeholder} id="mashov-textfield" error={error} autoComplete="off" onChange={onChange} />
             )}
             <HelperText error={error}>{helperText}</HelperText>
         </TextFieldContainer>

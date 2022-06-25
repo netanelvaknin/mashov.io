@@ -1,41 +1,39 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+
+const commonStyles = (error: boolean) => css`
+  width: 27rem;
+  display: block;
+  padding-right: .5rem;
+  font-size: 1.6rem;
+  color: ${props => error && props.theme.palette.error.main};
+  border: .2rem solid ${props => error && props.theme.palette.error.main};
+  border-radius: .4rem;
+  outline: none;
+  background: transparent;
+`;
 
 export const TextFieldContainer = styled.div`
-  max-width: 281px;
+  max-width: 28.1rem;
 `;
 
 export const Label = styled.label<{error: boolean}>`
-  margin-bottom: 7px;
+  margin-bottom: .7rem;
   display: block;
-  color: ${props => props.error && props.theme.palette.error.primary};
+  color: ${props => props.error && props.theme.palette.error.main};
 `;
 
 export const StyledInput = styled.input<{error: boolean}>`
-  height: 40px;
-  width: 270px;
-  display: block;
-  padding-right: 5px;
-  font-size: 16px;
-  color: ${props => props.error && props.theme.palette.error.primary};
-  border: 2px solid ${props => props.error && props.theme.palette.error.primary};
-  border-radius: 4px;
-  outline: none;
+  ${props => commonStyles(props.error)};
+  height: 4rem;
 `;
 
 export const TextArea = styled.textarea<{error: boolean}>`
-  width: 270px;
-  height: 300px;
-  display: block;
-  padding-right: 5px;
-  font-size: 16px;
-  color: ${props => props.error && props.theme.palette.error.primary};
-  border: 2px solid ${props => props.error && props.theme.palette.error.primary};
-  border-radius: 4px;
-  outline: none;
+  ${props => commonStyles(props.error)};
+  height: 30rem;
 `;
 
 export const HelperText = styled.div<{error: boolean}>`
-  font-size: 13px;
-  margin-top: 2px;
-  color: ${props => props.error && props.theme.palette.error.primary};
+  font-size: 1.3rem;
+  margin-top: .2rem;
+  color: ${props => props.error && props.theme.palette.error.main};
 `;

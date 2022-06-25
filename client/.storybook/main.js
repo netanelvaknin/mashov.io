@@ -13,5 +13,17 @@ module.exports = {
   "framework": "@storybook/react",
   "core": {
     "builder": "@storybook/builder-webpack5"
-  }
+  },
+  "previewBody": (body) => (`
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      
+      body {
+        font-size: 1.6rem;
+      }
+    </style>
+    ${body}
+  `),
 }

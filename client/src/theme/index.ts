@@ -1,7 +1,10 @@
 const theme = {
     palette: {
+        primary: {
+            main: 'blue'
+        },
         error: {
-            primary: 'red'
+            main: 'red'
         }
     }
 }
