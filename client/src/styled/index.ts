@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const HelperText = styled.div<{error: boolean}>`
   font-size: 1.3rem;
-  margin-top: .2rem;
+  margin-top: .7rem;
   color: ${props => props.error ? props.theme.palette.error.main : props.theme.palette.common.grey};
+  cursor: default;
 `;

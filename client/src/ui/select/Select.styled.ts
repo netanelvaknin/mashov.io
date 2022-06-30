@@ -9,10 +9,12 @@ export const SelectContainer = styled.div<{error?: boolean}>`
   ${props => props.error && `
     color: ${props.theme.palette.error.main};
   `};
+  position: relative;
 `;
 
 export const SelectField = styled.div`
   padding: 1rem;
+  height: 2rem;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -25,6 +27,10 @@ export const DropDown = styled.div<{isOpen: boolean}>`
   max-height: 19rem;
   overflow: auto;
   box-shadow: -4px 16px 17px -6px rgba(0,0,0,0.17);
+  position: absolute;
+  top: 3.8rem;
+  background: ${props => props.theme.palette.common.white};
+  width: 100%;
 `;
 
 export const SelectItemWrapper = styled.div<{isSelected: boolean, error?: boolean}>`
