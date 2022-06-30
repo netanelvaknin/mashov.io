@@ -15,8 +15,13 @@ const Template: ComponentStory<typeof Select> = (args) => <ThemeProvider theme={
 </ThemeProvider>;
 
 export const Regular = Template.bind({});
+const items = [1,2,3,4,5];
+
 Regular.args = {
-    children: <MenuItem value={1}>Testing</MenuItem>
+    value: 3,
+    onChange: (e) => alert(e),
+    helperText: 'הוראות מילוי',
+    children: items.map((i) =>  <MenuItem value={i}>{i}</MenuItem>)
 };
 
 Regular.parameters = {

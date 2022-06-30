@@ -37,16 +37,14 @@ export const Select = ({
     };
 
     const handleKeyPress = (e: React.KeyboardEvent, value: string | number): void => {
-        if (e.key === 'Enter') {
-            handleChange(value);
-        }
+        e.key === 'Enter' && handleChange(value);
     }
 
     return (
-        <SelectContainer id="select-mashov" className={className} ref={ref} error={error}>
-            <SelectField onClick={() => setShowItems(!showItems)}>{value || label}</SelectField>
+        <SelectContainer data-testid="select-container" id="select-mashov" className={className} ref={ref} error={error}>
+            <SelectField data-testid="select-mashov" onClick={() => setShowItems(!showItems)}>{value || label}</SelectField>
 
-            <DropDown id="dropdown-select-mashov" isOpen={showItems}>
+            <DropDown data-testid="select-dropdown" id="dropdown-select-mashov" isOpen={showItems}>
                 {showItems && ReactDOM.createPortal(React.Children.map(children, (child, childIndex) => {
                         if (React.isValidElement(child) && typeof child.type === 'function') {
                             const childValue = child.props.value;
@@ -56,6 +54,8 @@ export const Select = ({
                                 return (
                                     <SelectItemWrapper
                                         error={error}
+                                        data-testid="select-item"
+                                        tabIndex={0}
                                         isSelected={value === childValue}
                                         onClick={() => handleChange(childValue)}
                                         onKeyPress={(e) => handleKeyPress(e, childValue)}

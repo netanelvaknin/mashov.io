@@ -14,7 +14,7 @@ const StyledMenuItem = styled.div`
 
 export const MenuItem = ({children}: MenuItemProps) => {
     return (
-        <StyledMenuItem tabIndex={0} id="menu-item-mashov">{children}</StyledMenuItem>
+        <StyledMenuItem id="menu-item-mashov">{children}</StyledMenuItem>
     )
 }
 
