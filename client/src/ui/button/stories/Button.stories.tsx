@@ -5,7 +5,7 @@ import {ThemeProvider} from 'styled-components';
 import theme from '../../../theme';
 
 export default {
-    title: 'Example/Button',
+    title: 'Components/Button',
     component: Button,
 } as ComponentMeta<typeof Button>;
 

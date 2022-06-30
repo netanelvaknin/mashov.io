@@ -71,5 +71,21 @@
     "prop-types": "^15.8.1",
     "storybook-addon-rtl": "^0.4.3",
     "webpack": "^5.73.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{jsx,ts,tsx}",
+      "!<rootDir>/src/**/**/*.stories.{ts,tsx}",
+      "!<rootDir>/src/**/**/{index,types,routes,react-app-env.d}.{ts,tsx}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/index.tsx",
+      "<rootDir>/src/assets"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/*.test.{js,jsx,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,tsx}"
+    ]
   }
 }

@@ -5,6 +5,11 @@ const theme = {
         },
         error: {
             main: 'red'
+        },
+        common: {
+            white: '#ffff',
+            black: '#000',
+            grey: '#686767',
         }
     }
 }

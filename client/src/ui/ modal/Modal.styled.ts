@@ -6,4 +6,15 @@ export const StyledModal = styled.div`
   left: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #808080eb;
+`;
+
+export const InnerContent = styled.div`
+  background: ${({theme}) => theme.palette.common.white};
+  width: 50rem;
+  height: 50rem;
+  position: relative;
 `;

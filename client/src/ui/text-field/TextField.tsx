@@ -1,5 +1,6 @@
 import React, {ComponentPropsWithoutRef} from 'react';
-import {HelperText, Label, StyledInput, TextArea, TextFieldContainer} from './TextField.styled';
+import {Label, StyledInput, TextArea, TextFieldContainer} from './TextField.styled';
+import {HelperText} from '../../styled';
 
 export interface TextFieldProps extends ComponentPropsWithoutRef<"input"> {
     label: string;

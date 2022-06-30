@@ -31,9 +31,3 @@ export const TextArea = styled.textarea<{error: boolean}>`
   ${props => commonStyles(props.error)};
   height: 30rem;
 `;
-
-export const HelperText = styled.div<{error: boolean}>`
-  font-size: 1.3rem;
-  margin-top: .2rem;
-  color: ${props => props.error && props.theme.palette.error.main};
-`;

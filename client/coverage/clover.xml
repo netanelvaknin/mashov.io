@@ -1,44 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656162199704" clover="3.2.0">
-  <project timestamp="1656162199704" name="All files">
-    <metrics statements="9" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1" elements="12" coveredelements="3" complexity="0" loc="9" ncloc="9" packages="4" files="6" classes="6"/>
+<coverage generated="1656352711151" clover="3.2.0">
+  <project timestamp="1656352711151" name="All files">
+    <metrics statements="59" coveredstatements="52" conditionals="28" coveredconditionals="28" methods="28" coveredmethods="23" elements="115" coveredelements="103" complexity="0" loc="59" ncloc="59" packages="5" files="9" classes="9"/>
     <package name="src">
-      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="App.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/App.tsx">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="0" type="stmt"/>
-      </file>
-      <file name="index.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/index.tsx">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-      </file>
-      <file name="routes.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/routes.tsx">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.styled">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/home/netanelv/Desktop/projects/mashov-io/client/src/styled/index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+    <package name="src.ui. modal">
+      <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+      <file name="Modal.styled.ts" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/ modal/Modal.styled.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+      </file>
+      <file name="Modal.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/ modal/Modal.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="22" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.ui.Skeleton">
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="Skeleton.styled.ts" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/Skeleton/Skeleton.styled.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="3" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="Skeleton.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/Skeleton/Skeleton.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.ui.button">
+      <metrics statements="18" coveredstatements="18" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+      <file name="Button.styled.ts" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/button/Button.styled.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+      </file>
+      <file name="Button.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/button/Button.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.ui.text-field">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="TextField.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/text-field/TextField.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+      <metrics statements="14" coveredstatements="14" conditionals="12" coveredconditionals="12" methods="8" coveredmethods="8"/>
+      <file name="TextField.styled.ts" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/text-field/TextField.styled.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="3" type="cond" truecount="2" falsecount="0"/>
       </file>
-    </package>
-    <package name="src.ui.text-field.stories">
-      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="TextField.stories.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/text-field/stories/TextField.stories.tsx">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
+      <file name="TextField.tsx" path="/home/netanelv/Desktop/projects/mashov-io/client/src/ui/text-field/TextField.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
       </file>
     </package>
   </project>

@@ -5,7 +5,7 @@ import {ThemeProvider} from 'styled-components';
 import theme from '../../../theme';
 
 export default {
-    title: 'Example/TextField',
+    title: 'Components/TextField',
     component: TextField,
 } as ComponentMeta<typeof TextField>;
 

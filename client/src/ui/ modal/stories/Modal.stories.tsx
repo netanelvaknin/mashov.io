@@ -5,7 +5,7 @@ import {ThemeProvider} from 'styled-components';
 import theme from '../../../theme';
 
 export default {
-    title: 'Example/Modal',
+    title: 'Components/Modal',
     component: Modal,
 } as ComponentMeta<typeof Modal>;
 
