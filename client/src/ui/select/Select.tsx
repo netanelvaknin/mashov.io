@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import {useClickOutside} from "../../hooks";
+import {useClickOutside} from "hooks";
 import {DropDown, SelectContainer, SelectField, SelectItemWrapper} from './Select.styled';
 import {HelperText} from '../../styled';
 

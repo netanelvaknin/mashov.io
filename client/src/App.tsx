@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Modal, Button, TextField, Skeleton, Select, MenuItem} from './ui';
+import {Modal, Button, TextField, Skeleton, Select, MenuItem} from 'ui';
 
 function App() {
   const [open, setOpen] = useState(false);
