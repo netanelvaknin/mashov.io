@@ -12,11 +12,10 @@ export const SelectContainer = styled.div<{error?: boolean}>`
 `;
 
 export const SelectField = styled.div`
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding-right: 0.5rem;
+  padding: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 `;
 
 export const DropDown = styled.div<{isOpen: boolean}>`
