@@ -2,6 +2,8 @@
 
 # dependencies
 client/node_modules
+client/coverage
+/client/src/coverage
 /node_modules
 /.pnp
 .pnp.js

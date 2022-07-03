@@ -1,11 +1,19 @@
 import React, {useState} from 'react';
-import {Modal, Button, TextField, Skeleton, Select, MenuItem} from 'ui';
+import {Modal, Button, TextField, Skeleton, Select, MenuItem, Alert} from 'ui';
+import styled from 'styled-components';
+
+const StyledSelect = styled(Select)`margin-bottom: 3rem;`;
+
+const StyledAlert = styled(Alert)`
+  background: cyan;
+`;
 
 function App() {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState('');
   const [selectVal, setSelectVal] = useState('');
-  const menuItems = [" בחר ערך בחר ערך מפ ערך מפבחר ערך מפ ערך מפבחר ערך מפ ערך מפבחר ערך מפ ערך מפבחר ערך מפ ערך מפ ערך מפ", 1,2,3,4,5, 6, 7, 8, 9, 10, 11, 12];
+  const [alertOpen, setAlertOpen] = useState(false);
+  const menuItems = [" בחר ערך בחר ערך מפ ערך מפבחר ערך מפ ערך מפבחר ערך", 1,2,3,4,5, 6, 7, 8, 9, 10, 11, 12];
 
   return (
     <div className="App">
@@ -16,7 +24,7 @@ function App() {
         <TextField helperText="הוראות איך למלא" multiLine placeholder="מלא כאן.." label="נסיון" value={value} onChange={(e) => setValue(e.target.value)} />
         <Skeleton width="100px" height="100px"/>
 
-        <Select
+        <StyledSelect
             value={selectVal}
             label="בחר ערך"
             // error
@@ -24,7 +32,11 @@ function App() {
             onChange={(val) => setSelectVal(val)}
         >
             {menuItems.map((i) => <MenuItem value={i} key={i}>{i}</MenuItem>)}
-        </Select>
+        </StyledSelect>
+        <Button variant="outlined" onClick={() => setAlertOpen(true)}>Open alert</Button>
+        <StyledAlert open={alertOpen}>
+            lol
+        </StyledAlert>
     </div>
   );
 }

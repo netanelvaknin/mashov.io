@@ -117,7 +117,7 @@ describe('Button', function () {
             actualErrorMsg = e.message;
         }
 
-        expect(actualErrorMsg).toEqual('Only MenuItem allowed as children of Select component');
+        expect(actualErrorMsg).toBe('Only MenuItem allowed as children of Select component');
     });
 
     it('should throw an error when select have different component as children', () => {
